@@ -32,7 +32,7 @@ profiles <- mutate(profiles, essay_full = paste(essay0, essay1, essay2, essay3, 
 library(devtools)
 install_github("mlinegar/litMagModelling")
 library(litMagModelling)
-
+library(tm)
 # unfortunately, we have to create a stopword file, as this is the format that MALLET takes
 # note that MALLET was chosen because it performed significantly faster during testing
 # as compared to other tested options
